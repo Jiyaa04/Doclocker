@@ -1,0 +1,354 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Apply background image to the entire page */
+body {
+    background-image: url('https://i.pinimg.com/564x/ed/23/5a/ed235a2cec3c085a63e0039f1a7e48b1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+}
+
+/* Center the container on the page */
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.0); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #330000; /* Soft yellow color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Input fields styling */
+input[type="email"], input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button styling */
+button.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #330000 ;
+    color: #ffdd57 ;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #ffb347;
+}
+
+/* Signup link styling */
+.signup-link {
+    display: block;
+    margin: 20px 0;
+    color: #330033;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-link:hover {
+    color: #330033;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.footer strong {
+    color: #330033;
+}
+
+/* Social icons */
+.social-icons a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    color: #ffdd57;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffcc;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="email"], input[type="password"], button.btn {
+        font-size: 14px;
+    }
+}
+
+/*----------------------*/
+
+/* Existing global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background styling */
+body {
+    background-image: url('https://i.pinimg.com/564x/ed/23/5a/ed235a2cec3c085a63e0039f1a7e48b1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #330033;
+}
+
+/* Centering text */
+center {
+    text-align: center;
+}
+
+/* Heading styles */
+h2, h3 {
+    color: #330033; /* Soft yellow color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Link styles */
+a {
+    color: #330033; /* Soft yellow color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffb347 ; /* Cyan on hover */
+}
+
+/* Additional spacing */
+br {
+    line-height: 1.5;
+}
+
+/*------------------*/
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Parent container styling */
+.parent-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Child div styling */
+.child-div {
+    width: 100%; /* Ensure the child fits within the parent */
+    padding: 15px;
+    background: #444; /* Darker background for child div */
+    border-radius: 8px;
+}
+
+/* Additional styling */
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Example of table styling */
+table {
+    width: 100%; /* Ensure table fits within its container */
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+td {
+    background-color: #555;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+tr:nth-child(even) td {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #666;
+}
+
+a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+
+/*-------------------------*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #500b0b;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    color: #500b0b;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #500b0b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #6e1f1f;
+}
+
+a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer a {
+    color: #500b0b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

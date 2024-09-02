@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuLocker - Login</title>
+    <link rel="stylesheet" href="newcss.css">
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        function checkLogoutMessage() {
+            const logoutMessage = getUrlParameter('logout');
+            if (logoutMessage === 'true') {
+                alert("Logged out successfully!");
+            }
+        }
+
+        window.onload = checkLogoutMessage;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome back to your digital image locker<br><b>DocuLocker!</b></h1>
+        <form action="loginServlet" method="post" onsubmit="return validateForm()">
+            <pre>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            </pre>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a href="signup.jsp" class="signup-link">Don't have an account yet? Sign Up here</a>
+        <div class="footer">
+            <p>Powered by <strong>DocuLocker</strong> &copy; 2024</p>
+            <div class="social-icons">
+                <a href="#"><i class="facebook"></i></a>
+                <a href="#"><i class="twitter"></i></a>
+                <a href="#"><i class="linkedin"></i></a>
+                <a href="#"><i class="instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            if (!email || !password) {
+                alert('Both fields are required');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
